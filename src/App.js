@@ -43,29 +43,21 @@ function App() {
           <Route exact path ="/courses">
             <Courses/>
           </Route>
-
-          {/*Single Courses */}
-          <Route exact path ="/course/:name">
-            <Course/>
-          </Route>
+          
 
           {/* Instructors */}
           <Route exact path ="/instructors">
             <Instructors/>
           </Route>
 
-          {/* Single Instructor */}
-          <Route exact path ="/instructor/:id">
-            <Instructor/>
-          </Route>
-
+          
           {/* About Us */}
           <Route exact path ="/aboutus">
             <AboutUs/>
           </Route>
 
           {/* Not Found */}
-          <Route exact path ="*">
+          <Route path ="*">
             <NotFound/>
           </Route>
         </Switch>
